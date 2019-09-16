@@ -1,11 +1,11 @@
 const prompts = require('prompts');
 const fs = require('fs');
- 
+
 (async function () {
   const response = await prompts({
     type: 'text',
     name: 'iconPackName',
-    message: 'What would you like to name your icon pack?',
+    message: 'Enter the name of the icon pack.',
     validate: function (iconPackName) { return iconPackName.length > 0; }
   });
 
